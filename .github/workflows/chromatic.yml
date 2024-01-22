@@ -15,10 +15,13 @@ jobs:
     runs-on: ubuntu-latest
     # Job steps
     steps:
-      - uses: actions/setup-node@v3
+      - name: Read .nvmrc
+        run: echo ::set-output name=NVMRC::$(cat .nvmrc)
+        id: nvm
+      - name: Setup node
+        uses: actions/setup-node@v3
         with:
-              node-version-file: .nvmrc
-              cache: yarn
+          node-version: ${{ steps.nvm.outputs.NVMRC }}
       - name: Corepack Enable
         run: corepack enable
       - uses: actions/checkout@v1
