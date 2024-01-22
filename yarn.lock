@@ -6331,6 +6331,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chromatic@npm:^10.3.1":
+  version: 10.3.1
+  resolution: "chromatic@npm:10.3.1"
+  bin:
+    chroma: dist/bin.js
+    chromatic: dist/bin.js
+    chromatic-cli: dist/bin.js
+  checksum: 51c664ef66b637eb5da00ec977c673ee61499b3ceac6236e13def2b9211b5ea7af6c274ee71c3d1d215c891d1dd9a7d3f91fd7b4f8c07eddc3f6cd8b36550800
+  languageName: node
+  linkType: hard
+
 "chrome-trace-event@npm:^1.0.2":
   version: 1.0.3
   resolution: "chrome-trace-event@npm:1.0.3"
@@ -7086,6 +7097,7 @@ __metadata:
     "@vanilla-extract/css": "npm:^1.14.0"
     "@vanilla-extract/next-plugin": "npm:^2.3.3"
     "@vanilla-extract/webpack-plugin": "npm:^2.3.2"
+    chromatic: "npm:^10.3.1"
     css-loader: "npm:^6.9.1"
     eslint: "npm:^8.56.0"
     eslint-config-airbnb: "npm:^19.0.4"

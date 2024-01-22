@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_2c58d8828cea154"
   },
   "dependencies": {
     "@vanilla-extract/css": "^1.14.0",
@@ -33,6 +34,7 @@
     "@typescript-eslint/parser": "^6.19.0",
     "@vanilla-extract/next-plugin": "^2.3.3",
     "@vanilla-extract/webpack-plugin": "^2.3.2",
+    "chromatic": "^10.3.1",
     "css-loader": "^6.9.1",
     "eslint": "^8.56.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -50,5 +52,7 @@
     "typescript": "^5",
     "webpack": "^5.89.0"
   },
-  "packageManager": "yarn@4.0.2"
+  "packageManager": "yarn@4.0.2",
+  "readme": "ERROR: No README data found!",
+  "_id": "design-system@0.1.0"
 }
