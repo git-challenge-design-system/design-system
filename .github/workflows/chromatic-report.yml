@@ -2,7 +2,7 @@ name: Chromatic Report
 
 on:
   workflow_run:
-    workflows: ["Chromatic"]
+    workflows: ["Chromatic Deployment"]
     types:
       - completed
 
