@@ -1,8 +1,8 @@
 import { style, styleVariants } from "@vanilla-extract/css";
 
-import color from "../../tokens/color";
-import typography from "../../tokens/typography";
-import { borderRadius } from "../../tokens/utils.css";
+import color from "../../design-token/color";
+import typography from "../../design-token/typography";
+import { borderRadius } from "../../design-token/utils.css";
 
 export const buttonBase = style([
   typography.$semantic.title4Regular,
