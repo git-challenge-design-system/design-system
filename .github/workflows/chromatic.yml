@@ -7,6 +7,9 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 
 # List of jobs
 jobs:
@@ -29,6 +32,18 @@ jobs:
         #👇 Adds Chromatic as a step in the workflow
       - uses: chromaui/action@v1
         # Options required for Chromatic's GitHub Action
+        id: chromatic
         with:
           #👇 Chromatic projectToken, see https://storybook.js.org/tutorials/intro-to-storybook/react/ko/deploy/ to obtain it
           projectToken: ${{ secrets.CHROMATIC_PAGE_TOKEN }}
+      - name: Save PR number and Chromatic build outputs
+        run: |
+            mkdir -p ./pr
+            echo "${{ github.event.pull_request.number }}" > ./pr/prNumber
+            echo "${{ steps.chromatic.outputs.storybookUrl }}" > ./pr/storybookUrl
+            echo "${{ steps.chromatic.outputs.buildUrl }}" > ./pr/buildUrl
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: pr
+          path: pr/
