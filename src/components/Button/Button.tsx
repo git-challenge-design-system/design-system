@@ -1,6 +1,6 @@
 import type { ButtonHTMLAttributes, ReactNode } from "react";
 
-import { widthFull } from "../../tokens/utils.css";
+import { widthFull } from "../../design-token/utils.css";
 import classnames from "../../utils/classnames";
 
 import * as styles from "./Button.css";
