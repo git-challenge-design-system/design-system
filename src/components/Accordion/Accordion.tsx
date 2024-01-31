@@ -10,7 +10,7 @@ interface AccordionProps {
   children: ReactNode;
 }
 
-export default function Accordion({
+function Accordion({
   width = 200,
   open: initOpen = false,
   children,
@@ -24,3 +24,5 @@ export default function Accordion({
 
 Accordion.Details = AccordionDetails;
 Accordion.Summary = AccordionSummary;
+
+export default Accordion;
