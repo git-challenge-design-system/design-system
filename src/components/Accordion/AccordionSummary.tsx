@@ -7,7 +7,7 @@ import {
   type AccordionContextType,
   useAccordion,
 } from "./AccordionContextProvider";
-import ChevronIcon from "./ChevronIcon/ChevronIcon";
+import ChevronIcon from "./ChevronIcon";
 
 export interface AccordionSummaryProps {
   color?: "black" | "grey";
