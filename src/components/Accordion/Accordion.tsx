@@ -4,7 +4,7 @@ import { AccordionContextProvider } from "./AccordionContextProvider";
 import AccordionDetails from "./AccordionDetails";
 import AccordionSummary from "./AccordionSummary";
 
-interface AccordionProps {
+export interface AccordionProps {
   width?: number | string;
   open?: boolean;
   children: ReactNode;
