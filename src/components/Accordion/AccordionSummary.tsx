@@ -7,9 +7,9 @@ import {
   type AccordionContextType,
   useAccordion,
 } from "./AccordionContextProvider";
-import ChevronIcon from "./ChevronIcon/ChevronIcon";
+import ChevronIcon from "./ChevronIcon";
 
-interface AccordionSummaryProps {
+export interface AccordionSummaryProps {
   color?: "black" | "grey";
   size?: "md" | "sm";
   children: ReactNode | RenderComponentType;
