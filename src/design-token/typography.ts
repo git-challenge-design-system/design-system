@@ -19,7 +19,7 @@ const $semantic = {
   caption2Regular: "mm-semantic-typography-caption2-regular",
   caption2Bold: "mm-semantic-typography-caption2-bold",
   code: "mm-semantic-typography-code",
-};
+} as const;
 
 const typography = { $semantic };
 export default typography;
